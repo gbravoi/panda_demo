@@ -1,8 +1,7 @@
-# intelligent_prosthetic_arm
-Intelligent Prosthetic Arm
+# Panda demp package
 
-## Common Installation
-Install https://github.com/erdalpekel/panda_simulation and all packages needed
+## Installation of other packages needed
+Install https://github.com/erdalpekel/panda_simulation and all other packages neededes
 
 ## Run pick an place Rviz demo simulation:
 1. in a terminal: (this will launch panda+gazebo)
