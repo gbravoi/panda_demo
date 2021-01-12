@@ -1,4 +1,4 @@
-# Panda demp package
+# Panda demo package
 
 ## Installation of other packages needed
 Install https://github.com/erdalpekel/panda_simulation and all other packages neededes
