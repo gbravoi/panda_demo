@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<launch>
+
+  <!-- We load gazebo simulation with panda robot included -->
+  <include file="$(find panda_simulation)/launch/simulation.launch">
+  </include>
+
+
+
+
+
+<!-- Spaw table-->
+ <node name="table_spawned" pkg="gazebo_ros" type="spawn_model" respawn="false" output="screen"
+ args="-sdf -file $(find panda_demo)/models/cafe_table/model.sdf -model cofee_table  -x 0.75 -y 0 -z -0.755"  />
+
+
+<!-- Compute grasp service-->
+<node pkg="panda_demo" type="grasp_service.py" name="compute_grasps_server" />
+
+ <!-- Spaw box-->
+ <node name="box_spawned" pkg="gazebo_ros" type="spawn_model" respawn="false" output="screen"
+ args="-urdf -file $(find panda_demo)/models/block/model.urdf -model block  -x 0.4225 -y 0.1265 -z 0.7725"  />
+
+ <!--Launch node of subscriber that update the position of the box (copy gazebo to rviz)
+<node pkg="panda_demo" type="box_sub.py" name="marker_test_node" />-->
+
+  <!-- Start the moveit tutorial on top 
+ <node pkg="moveit_tutorials" type="move_group_python_interface_tutorial.py" name="moveit_interfacetutorial" output="screen">
+-->
+
+</launch>

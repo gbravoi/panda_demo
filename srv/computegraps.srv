@@ -1,0 +1,3 @@
+string object_name
+---
+moveit_msgs/Grasp grasp_result
