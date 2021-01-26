@@ -10,7 +10,7 @@ The robot will move to the same positions on gazebo. (note that object was not c
 
 
 1. In a terminal: (this will launch panda+gazebo)
-	```
+  ```
   $ roslaunch panda_simulation simulation.launch
   ```
 2. In another terminal
