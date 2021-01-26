@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python2
 
 #demo based on https://github.com/RethinkRobotics/sawyer_simulator/blob/master/sawyer_sim_examples/scripts/ik_pick_and_place_demo.py
 # https://github.com/frankaemika/external_gripper_example/blob/master/panda_with_robotiq_gripper_example/scripts/panda_with_robotiq_gripper_example.py
@@ -88,10 +88,10 @@ def Query_object_Pose( object_name):
         #call service that return model state
         gms = rospy.ServiceProxy('/gazebo/get_model_state', GetModelState)
         resp1 = gms(model_name=object_name)
-    except rospy.ServiceException, e:
+    except rospy.ServiceException as e:
         rospy.logerr('Error on calling service: %s',str(e))
-        print "Service call failed: %s"%e     
-    print resp1.pose
+        print("Service call failed: %s"%e     )
+    print(resp1.pose)
 
     #manual pose
     box_pose=Pose()

@@ -1,10 +1,28 @@
-# Panda demo package
+# Panda gazebo-rviz-moveit demo
+Package of an example of how to use moveit in an enviroment working on rviz+gazebo
 
-## Installation of other packages needed
-Install https://github.com/erdalpekel/panda_simulation and all other packages neededes
+## Common Installation
+Install https://github.com/erdalpekel/panda_simulation and all packages needed
+
+## Run pick an place Rviz demo simulation:
+This simulation will make the robot pick and place an object of rviz.
+The robot will move to the same positions on gazebo. (note that object was not created in Gazebo simulation)
+
+
+1. In a terminal: (this will launch panda+gazebo)
+	```
+  $ roslaunch panda_simulation simulation.launch
+  ```
+2. In another terminal
+```
+	$rosrun panda_demo pick_and_place_demo.py 
+  ```
 
 ## Run pick and place with Gazebo simulation.
-This simulation works "Gazebo graso fix plugin". This plugin attach the object when is near the gripper
+This simulation will perform pick and place of an object that is present on Gazebo. The same scenario will we also shown in rviz.
+For some reasons, when the robot tried to pick and object, the object flied away, so I used the "Gazebo grasp fix plugin" to ignore all the contacts interaction with the object.
+
+The "Gazebo grasp fix plugin" attach the object when is near the gripper
 avoiding some physics error in the gazebo enviroment.
 Installation insctructions can be found here: https://github.com/JenniferBuehler/gazebo-pkgs/wiki/Installation
 
@@ -31,15 +49,18 @@ Add before the ```</robot> ```
   </gazebo>
 ```
 
-### Lunching simulation
+### Lunching pick and place with Gazebo simulation.
 1. in a terminal: (this will launch panda+gazebo)
-	roslaunch panda_demo gazebo_pick_and_place.launch
+```
+	$ roslaunch panda_demo gazebo_pick_and_place.launch
+  ```
 2. in another terminal
-	rosrun panda_demo gazebo_pick_and_place_demo.py
-3. add box marker: 
+```
+	$ rosrun panda_demo gazebo_pick_and_place_demo.py
+  ```
+3. add box marker (optional, represent real porition of the box in gazebo): 
 	on rviz click add>by topic> /boxpose> Marker.
 	Click on Save Config to lunch the display of this marker every time your lunch Rviz
-
 
 
 

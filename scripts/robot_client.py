@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python2
 
 #example of client for the robot, used to test robot server when complex message neded
 

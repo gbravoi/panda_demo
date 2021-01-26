@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python2
 
 #the idea of this code is to update rviz using the position of an object in gazebo
 #there are 2 ways, call a service and get the position and the modify rviz,

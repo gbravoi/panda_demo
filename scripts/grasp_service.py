@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python2
 
 #This is a service that only work in the example
 #in the future replace by a service that can compute the grasp of an object

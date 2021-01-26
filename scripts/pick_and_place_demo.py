@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python2
 
 #demo based on https://github.com/RethinkRobotics/sawyer_simulator/blob/master/sawyer_sim_examples/scripts/ik_pick_and_place_demo.py
 # https://github.com/frankaemika/external_gripper_example/blob/master/panda_with_robotiq_gripper_example/scripts/panda_with_robotiq_gripper_example.py

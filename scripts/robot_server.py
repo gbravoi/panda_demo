@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python2
 
 #The idea of this node is to move the robot to perform differnet task
 #using simple comands
