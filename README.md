@@ -3,12 +3,6 @@
 ## Installation of other packages needed
 Install https://github.com/erdalpekel/panda_simulation and all other packages neededes
 
-## Run pick an place Rviz demo simulation:
-1. in a terminal: (this will launch panda+gazebo)
-	roslaunch panda_simulation simulation.launch
-2. in another terminal
-	$rosrun panda_demo pick_and_place_demo.py 
-
 ## Run pick and place with Gazebo simulation.
 This simulation works "Gazebo graso fix plugin". This plugin attach the object when is near the gripper
 avoiding some physics error in the gazebo enviroment.
